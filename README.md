@@ -1,57 +1,41 @@
 # Ionic Native
+为非官方`cordova`插件开发`IonicNativePlugin`，也就是ts部分
 
-## 安装
-
-1. 安装`Cordova`和`ionic Native`插件:
+## 步骤
+1. 下载依赖项参考`package.json`文件中[devDependencies节点](https://github.com/mylhyl/ionic-native/blob/master/package.json)
 ```bash
-ionic cordova plugin add cordova-plugin-navimap
-npm install cyg-ionic-native-navimap --save
+npm install gulp
+npm install rimraf
+npm install gulp-rename
+npm install gulp-tslint
+npm install tslint
+npm install typescript
+npm install decamelize
+npm install gulp-replace
+npm install fs-extra-promise
+npm install dgeni
+npm install tslint-ionic-rules
+npm install child-process-promise
+npm install conventional-changelog-cli
+npm install cpr
+npm install cz-conventional-changelog
+npm install dgeni-packages
+npm install jasmine-core
+npm install karma
+npm install karma-cli
+npm install karma-jasmine
+npm install karma-phantomjs-launcher
+npm install karma-typescript
+npm install karma-typescript-es6-transform
+npm install queue
+npm install rxjs
+npm install zone.js
+npm install @angular/compiler
+npm install @angular/compiler-cli
+npm install @angular/core
+npm install @types/cordova
+npm install @types/jasmine
+npm install @types/node
 ```
 
-2. 引用插件到APP`module`或者`Component`  
-全局app.module.ts文件
-
-```typescript
-@NgModule({  
-  providers: [
-    NaviMap
-    ] 
-})
-```
-
-需要用到插件的pages.ts
-```typescript
-@Component({
-  providers: [
-    NaviMap
-  ]
-})
-```
-
-### 使用说明
-
-```typescript
-import { NaviMap } from 'cyg-ionic-native-navimap';
-
-@Component({ ... })
-export class MyComponent {
-
-  constructor(private naviMap: NaviMap) {
-
-      // 高德
-      naviMap.amapRoute(uri).then(res => {
-        console.log(res);
-      }).catch(err =>{
-        alert(err);
-      });
-
-      // 百度
-      naviMap.bdmapRoute(uri).then(res => {
-        console.log(res);
-      }).catch(err =>{
-        alert(err);
-      });
-  }
-  
-}
-```
+2. 创建插件详见[Ionic Native插件开发指南](https://github.com/ionic-team/ionic-native/blob/master/DEVELOPER.md)
