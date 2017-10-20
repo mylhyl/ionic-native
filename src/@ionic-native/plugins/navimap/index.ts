@@ -8,7 +8,7 @@ import { Plugin, Cordova, IonicNativePlugin } from '@ionic-native/core';
  *
  * @usage
  * ```typescript
- * import { NaviMap } from '@ionic-native/navimap';
+ * import { NaviMap } from 'cyg-ionic-native-navimap';
  *
  * constructor(private naviMap: NaviMap) { }
  *
@@ -22,8 +22,8 @@ import { Plugin, Cordova, IonicNativePlugin } from '@ionic-native/core';
  */
 @Plugin({
   pluginName: 'NaviMap',
-  plugin: 'cordova-plugin-naviMap',
-  pluginRef: 'cordova.naviMap',
+  plugin: 'cordova-plugin-navimap',
+  pluginRef: 'cordovaNaviMap',
   repo: 'https://github.com/mylhyl/cordova-plugin-naviMap',
   platforms: ['Android', 'iOS']
 })
